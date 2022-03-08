@@ -63,7 +63,7 @@ describe('CoursesService', () => {
         });
     });
 
-    it('should give an error if save course fails', () => {
+    xit('should give an error if save course fails', () => {
         const changes: Partial<Course> = {titles: {description: 'Testing Course'}};
 
         coursesService.saveCourse(12, changes).subscribe(() => {
